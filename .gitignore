@@ -1,0 +1,14 @@
+.vagrant
+.DS_Store
+*.retry
+tmp
+tmp/*
+hosts
+*.ovpn
+.keys/
+.venv/
+logs/
+roles-bk/
+extra-playbooks-bk/
+*.ini
+openrc

@@ -1,0 +1,19 @@
+---
+
+- name: Ensure etcd PKI directory already exists
+  file: path={{ etcd_pki_dir }} state=directory
+  register: create_etcd_pki_dir
+
+- name: Copy etcd certificates and keys
+  vars:
+    files:
+      - "{{ etcd_ca }}"
+      - "{{ etcd_ca_key }}"
+      - "{{ etcd_cert }}"
+      - "{{ etcd_cert_key }}"
+  import_role:
+    name: common/copy-files
+
+- include_tasks: config-etcd.yml
+
+- include_tasks: systemd-etcd.yml
