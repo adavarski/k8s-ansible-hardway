@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Program: Setup a vagrant env
-# History: 2017/1/19 Kyle.b Release
 
 source ./hack/.func-vars
 
