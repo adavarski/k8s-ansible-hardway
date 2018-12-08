@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Program: Vagrant func and vars
-# History: 2017/1/19 Kyle.b Release
 
 GROUP_VARS_PATH="./inventory/group_vars/all.yml"
 INVENTORY_PATH="./inventory/hosts.ini"
