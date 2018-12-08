@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Program: Reset all config
-# History: 2017/1/25 Kyle.b Release
 
 source ./hack/.func-vars
 set -eu
